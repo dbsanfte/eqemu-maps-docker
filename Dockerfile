@@ -32,4 +32,6 @@ RUN apt-get remove -y git wget curl && \
 WORKDIR /home/eqemu
 USER eqemu
 
+VOLUME /home/eqemu/maps
+
 ENTRYPOINT ["/usr/bin/tail", "-f", "/dev/null"]
