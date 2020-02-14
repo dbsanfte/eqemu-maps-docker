@@ -32,4 +32,4 @@ RUN apt-get remove -y git wget curl && \
 WORKDIR /home/eqemu
 USER eqemu
 
-ENTRYPOINT /bin/true
+ENTRYPOINT ["/usr/bin/tail", "-f", "/dev/null"]
