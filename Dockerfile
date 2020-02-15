@@ -29,6 +29,8 @@ RUN apt-get remove -y git wget curl && \
     apt-get autoremove -y && \
     apt-get clean cache
 
+RUN chown -R eqemu:eqemu /home/eqemu
+
 WORKDIR /home/eqemu
 USER eqemu
 
